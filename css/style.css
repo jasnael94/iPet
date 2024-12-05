@@ -7,7 +7,6 @@ h1{
   font-family:'Monoton', sans-serif;
   font-size: 25px;
   color: #292094;
-  background-color: #bbb9b9;
  
 }
 
@@ -16,7 +15,7 @@ h1{
   width: 400px;
   height: 500px;
   border: rgb(29, 25, 56) solid 5px ;
-  background-image: url('../flame-icon.jpg');
+  background-image: url('../pictures/flame-icon.jpg');
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
