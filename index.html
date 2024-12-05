@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Tama gotcha</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Monoton&display=swap" rel="stylesheet">
+	</head>
+
+<body>
+	<div id="pet-container">
+		<h1>iPet</h1>
+		<div class="screen">	
+			<div id="messages"></div>	
+			<div id="pet">🐨</div>
+		    <div id="stats">
+			<div class="stat">FAIM<span id="hunger">100</span>%</div>
+			<div class="stat">BONHEUR<span id="happiness">100</span>%</div>
+			<div class="stat">ENERGIE<span id="energy">100</span>%</div>
+		</div>
+     </div>
+
+		<div id="buttons">
+			<button class="button" onclick="feedTheAnimal()">A</button>
+			<button class="button" onclick="playWithTheAnimal()">B</button>
+			<button id="sleep-button" class="button" onclick="makeTheAnimalSleep()">C</button>
+		</div>
+		
+	</div>
+	<script type="module" src="app.js"></script>
+</body>
+
+</html>

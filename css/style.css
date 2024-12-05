@@ -1,0 +1,133 @@
+body {
+  text-align: center;
+  background-color: rgb(10, 10, 11);
+}
+
+h1{
+  font-family:'Monoton', sans-serif;
+  font-size: 25px;
+  color: #292094;
+  background-color: #bbb9b9;
+ 
+}
+
+#pet-container {
+  margin: 20px auto;
+  width: 400px;
+  height: 500px;
+  border: rgb(29, 25, 56) solid 5px ;
+  background-image: url('../flame-icon.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.screen{
+  width: 280px !important;
+  height: 200px;
+  background-color: #bbb9b9;
+  margin: auto;
+  border-radius: 10px;
+  border: #333 solid 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+#pet {
+  margin-top: 0px;
+  font-size: 70px;
+  margin: 0px;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #342f6d;
+  border: none;
+  margin: 5px;
+  width: 50px;
+  border-radius: 100%;
+  color:#453e8f;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+ 
+}
+.button:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4), 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px); 
+}
+
+.button:active {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.1);  
+  transform: translateY(2px);
+}
+
+
+#buttons button:disabled {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: #413b8b;
+  color: #333;
+  margin-bottom: 5px;
+  box-shadow: #333;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+#stats {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Doto';
+  font-size: 15px;
+  margin-top: 0;
+}
+
+
+#messages {
+  margin-top: 20px;
+  min-height: 50px;
+  color: #3b3a3a;
+  font-weight: bold;
+  font-family: 'Doto';
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+.jump {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
